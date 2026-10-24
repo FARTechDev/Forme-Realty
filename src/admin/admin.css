@@ -1,0 +1,8 @@
+@keyframes admin-fade { from { opacity: 0 } to { opacity: 1 } }
+@keyframes admin-pop { from { opacity: 0; transform: translateY(12px) scale(.98) } to { opacity: 1; transform: none } }
+@keyframes admin-slide { from { transform: translateX(100%) } to { transform: none } }
+.admin-fade { animation: admin-fade .2s ease-out both }
+.admin-pop { animation: admin-pop .28s cubic-bezier(.16,1,.3,1) both }
+.admin-slide { animation: admin-slide .38s cubic-bezier(.16,1,.3,1) both }
+.admin-root { font-family: 'Manrope', system-ui, sans-serif }
+.admin-root main > *, .admin-root main { animation: admin-fade .3s ease-out both }

@@ -1,0 +1,82 @@
+/* ---------- Lenis ---------- */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+html.menu-open { overflow: hidden; }
+
+/* ---------- Split-text masks ---------- */
+.ai-line { will-change: transform; }
+
+/* ---------- CTA button fill (sage ink spreading from the pointer) + magnetic hook ---------- */
+.cta { position: relative; isolation: isolate; overflow: hidden; will-change: transform; }
+.cta::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; background: #8a9487;
+  clip-path: circle(0% at var(--mx, 50%) var(--my, 50%));
+  transition: clip-path .7s cubic-bezier(.16, 1, .3, 1);
+}
+.cta:hover::before, .cta:focus-visible::before { clip-path: circle(150% at var(--mx, 50%) var(--my, 50%)); }
+.cta:hover { color: #fff; }
+.cta .material-symbols-outlined { transition: transform .4s cubic-bezier(.16, 1, .3, 1); }
+.cta:hover .material-symbols-outlined { transform: translateX(4px); }
+.cta:active { transform: scale(.97); }
+
+/* ghost / outlined buttons — border draws darker, label nudges */
+a[class*="border"][class*="rounded"]:not(.cta), button[class*="border"][class*="rounded"]:not(.cta) { transition: border-color .3s, background-color .3s, transform .3s cubic-bezier(.16, 1, .3, 1); }
+a[class*="border"][class*="rounded"]:not(.cta):active { transform: scale(.97); }
+
+/* text links with an underline — animate the hairline */
+a.border-b, a[class*="border-b "] { background: linear-gradient(currentColor, currentColor) left bottom / 0% 1px no-repeat; transition: background-size .5s cubic-bezier(.16, 1, .3, 1), color .2s; }
+a.border-b:hover { background-size: 100% 1px; }
+
+/* nav underline */
+.nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: -6px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform .5s cubic-bezier(.16, 1, .3, 1); }
+.nav-link:hover::after, .nav-link.is-active::after { transform: scaleX(1); transform-origin: left; }
+.wordmark { transition: letter-spacing .6s cubic-bezier(.16, 1, .3, 1); }
+a:hover > .wordmark { letter-spacing: .24em; }
+.footer-link { position: relative; display: inline-block; transition: transform .4s cubic-bezier(.16, 1, .3, 1), color .2s; }
+.footer-link:hover { transform: translateX(6px); }
+.menu-link { transition: transform .5s cubic-bezier(.16, 1, .3, 1), color .2s; display: inline-block; }
+.menu-link:hover { transform: translateX(14px); }
+
+/* burger icon */
+.menu-icon { position: relative; width: 18px; height: 10px; display: block; }
+.menu-icon i { position: absolute; left: 0; right: 0; height: 1.5px; background: currentColor; transition: transform .5s cubic-bezier(.16, 1, .3, 1), top .5s; }
+.menu-icon i:nth-child(1) { top: 0; } .menu-icon i:nth-child(2) { top: 8px; }
+.menu-icon.is-open i:nth-child(1) { top: 4px; transform: rotate(45deg); } .menu-icon.is-open i:nth-child(2) { top: 4px; transform: rotate(-45deg); }
+
+/* property / editorial cards: image warms on hover (design: no dramatic zoom) */
+article img { transition: filter .6s ease, transform .9s cubic-bezier(.16, 1, .3, 1); }
+article:hover img { filter: contrast(1.04) saturate(1.06); }
+
+/* ---------- Custom cursor ---------- */
+.fx-cursor, .fx-cursor-dot { position: fixed; top: 0; left: 0; z-index: 400; pointer-events: none; border-radius: 9999px; will-change: transform; }
+.fx-cursor { width: 44px; height: 44px; margin: -22px 0 0 -22px; border: 1px solid rgba(34, 37, 34, .55); display: flex; align-items: center; justify-content: center; mix-blend-mode: difference; border-color: rgba(255, 255, 255, .85); transition: width .35s cubic-bezier(.16, 1, .3, 1), height .35s cubic-bezier(.16, 1, .3, 1), margin .35s cubic-bezier(.16, 1, .3, 1), background-color .3s, border-color .3s, opacity .3s; }
+.fx-cursor-dot { width: 6px; height: 6px; margin: -3px 0 0 -3px; background: #fff; mix-blend-mode: difference; transition: opacity .3s, transform .2s; }
+.fx-cursor span { font: 600 10px/1 Manrope, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #151715; opacity: 0; transform: scale(.6); transition: opacity .3s, transform .4s cubic-bezier(.16, 1, .3, 1); white-space: nowrap; }
+.fx-cursor.is-link { width: 72px; height: 72px; margin: -36px 0 0 -36px; background: rgba(255, 255, 255, 1); border-color: transparent; }
+.fx-cursor.is-view { width: 92px; height: 92px; margin: -46px 0 0 -46px; background: #fff; border-color: transparent; }
+.fx-cursor.is-view span { opacity: 1; transform: none; }
+.fx-cursor.is-down { width: 30px; height: 30px; margin: -15px 0 0 -15px; }
+.fx-cursor.is-hidden, .fx-cursor-dot.is-hidden { opacity: 0; }
+@media (hover: hover) and (pointer: fine) { html.has-cursor, html.has-cursor a, html.has-cursor button, html.has-cursor [role="button"], html.has-cursor label, html.has-cursor select, html.has-cursor summary { cursor: none; } }
+
+/* ---------- Preloader ---------- */
+.fx-preloader { position: fixed; inset: 0; z-index: 500; background: #151715; color: #faf9f5; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.fx-preloader .bar { width: min(260px, 50vw); height: 1px; background: rgba(250, 249, 245, .15); margin-top: 28px; overflow: hidden; }
+.fx-preloader .bar i { display: block; height: 100%; width: 100%; background: #8a9487; transform: scaleX(0); transform-origin: left; }
+
+/* ---------- Footer signature name ---------- */
+.signature-name { position: relative; }
+.sig-letter { display: inline-block; overflow: hidden; height: 1.25em; line-height: 1.25em; vertical-align: bottom; }
+.sig-inner { display: block; position: relative; transition: transform .6s cubic-bezier(.16, 1, .3, 1); transition-delay: calc(var(--i) * 25ms); animation: sig-wave 5s ease-in-out infinite; animation-delay: calc(var(--i) * 120ms); }
+.sig-inner::after { content: attr(data-ch); position: absolute; left: 0; top: 100%; color: #8a9487; }
+.signature-name:hover .sig-inner { transform: translateY(-100%); animation-play-state: paused; }
+@keyframes sig-wave { 0%, 70%, 100% { color: #faf9f5; } 80% { color: #8a9487; } }
+.toast-in { animation: toast-in .5s cubic-bezier(.16, 1, .3, 1) both; }
+@keyframes toast-in { from { opacity: 0; transform: translateY(20px) } to { opacity: 1; transform: none } }
+
+/* WebGL canvases */
+.gl-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+
+@media (prefers-reduced-motion: reduce) { .sig-inner { animation: none; } }

@@ -1,0 +1,296 @@
+[
+ {
+  "slug": "accessibility_statement",
+  "name": "AccessibilityStatementPage",
+  "forms": 1,
+  "hasScript": false
+ },
+ {
+  "slug": "additional_information_submission_confirmation",
+  "name": "AdditionalInformationSubmissionConfirmationPage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "arrange_a_property_viewing",
+  "name": "ArrangeAPropertyViewingPage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "buyer_services",
+  "name": "BuyerServicesPage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "careers_work_with_us",
+  "name": "CareersWorkWithUsPage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "client_experiences",
+  "name": "ClientExperiencesPage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "commercial_real_estate",
+  "name": "CommercialRealEstatePage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "cookie_policy_preferences",
+  "name": "CookiePolicyPreferencesPage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "frequently_asked_questions",
+  "name": "FrequentlyAskedQuestionsPage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "homepage",
+  "name": "HomepagePage",
+  "forms": 0,
+  "hasScript": false
+ },
+ {
+  "slug": "investment_properties",
+  "name": "InvestmentPropertiesPage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "journal_insights",
+  "name": "JournalInsightsPage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "land_development_opportunities",
+  "name": "LandDevelopmentOpportunitiesPage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "landlord_services",
+  "name": "LandlordServicesPage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "mortgage_financing_guidance",
+  "name": "MortgageFinancingGuidancePage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "neighborhoods",
+  "name": "NeighborhoodsPage",
+  "forms": 0,
+  "hasScript": false
+ },
+ {
+  "slug": "new_developments_off_plan_properties",
+  "name": "NewDevelopmentsOffPlanPropertiesPage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "our_approach",
+  "name": "OurApproachPage",
+  "forms": 0,
+  "hasScript": false
+ },
+ {
+  "slug": "our_people",
+  "name": "OurPeoplePage",
+  "forms": 0,
+  "hasScript": false
+ },
+ {
+  "slug": "our_process_how_it_works",
+  "name": "OurProcessHowItWorksPage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "press_media",
+  "name": "PressMediaPage",
+  "forms": 1,
+  "hasScript": false
+ },
+ {
+  "slug": "privacy_policy",
+  "name": "PrivacyPolicyPage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "properties_listing",
+  "name": "PropertiesListingPage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "property_development_planning_advisory",
+  "name": "PropertyDevelopmentPlanningAdvisoryPage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "property_management_services",
+  "name": "PropertyManagementServicesPage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "property_search_advanced_filters",
+  "name": "PropertySearchAdvancedFiltersPage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "property_valuation_assessment",
+  "name": "PropertyValuationAssessmentPage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "relocation_moving_guide",
+  "name": "RelocationMovingGuidePage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "rental_application_additional_information_request",
+  "name": "RentalApplicationAdditionalInformationRequestPage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "rental_application_document_centre",
+  "name": "RentalApplicationDocumentCentrePage",
+  "forms": 0,
+  "hasScript": false
+ },
+ {
+  "slug": "rental_application_messages_communication_centre",
+  "name": "RentalApplicationMessagesCommunicationCentrePage",
+  "forms": 0,
+  "hasScript": false
+ },
+ {
+  "slug": "rental_application_portal",
+  "name": "RentalApplicationPortalPage",
+  "forms": 1,
+  "hasScript": false
+ },
+ {
+  "slug": "rental_application_review_submission",
+  "name": "RentalApplicationReviewSubmissionPage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "rental_application_status_tracking",
+  "name": "RentalApplicationStatusTrackingPage",
+  "forms": 0,
+  "hasScript": false
+ },
+ {
+  "slug": "rental_application_submission_confirmation",
+  "name": "RentalApplicationSubmissionConfirmationPage",
+  "forms": 0,
+  "hasScript": false
+ },
+ {
+  "slug": "rental_application_viewing_guide",
+  "name": "RentalApplicationViewingGuidePage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "rental_application_withdrawal",
+  "name": "RentalApplicationWithdrawalPage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "rental_application_withdrawal_confirmation",
+  "name": "RentalApplicationWithdrawalConfirmationPage",
+  "forms": 0,
+  "hasScript": false
+ },
+ {
+  "slug": "rental_listings_available_homes",
+  "name": "RentalListingsAvailableHomesPage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "rental_property_detail",
+  "name": "RentalPropertyDetailPage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "saved_properties_shortlist",
+  "name": "SavedPropertiesShortlistPage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "schedule_a_property_viewing",
+  "name": "ScheduleAPropertyViewingPage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "seller_services",
+  "name": "SellerServicesPage",
+  "forms": 0,
+  "hasScript": false
+ },
+ {
+  "slug": "start_a_conversation",
+  "name": "StartAConversationPage",
+  "forms": 1,
+  "hasScript": false
+ },
+ {
+  "slug": "tenant_services",
+  "name": "TenantServicesPage",
+  "forms": 1,
+  "hasScript": true
+ },
+ {
+  "slug": "terms_conditions",
+  "name": "TermsConditionsPage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "the_courtyard_residence",
+  "name": "TheCourtyardResidencePage",
+  "forms": 0,
+  "hasScript": false
+ },
+ {
+  "slug": "the_quiet_power_of_thoughtful_architecture",
+  "name": "TheQuietPowerOfThoughtfulArchitecturePage",
+  "forms": 0,
+  "hasScript": true
+ },
+ {
+  "slug": "viewing_request_confirmation",
+  "name": "ViewingRequestConfirmationPage",
+  "forms": 0,
+  "hasScript": false
+ }
+]
